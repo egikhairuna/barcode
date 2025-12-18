@@ -56,7 +56,6 @@ export default function Home() {
         <img
           src="https://jamesboogie.com/wp-content/uploads/2025/12/WhatsApp-Image-2025-12-18-at-10.26.32.jpeg"
           alt="temen"
-          href="/barcode-generator"
         />
       </a>
 
