@@ -148,7 +148,7 @@ export default function BarcodeGenerator() {
           width: 85mm;
           height: 20mm;
           display: flex;
-          gap: 5mm;
+          gap: 4mm;
           background: white;
           margin-bottom: 6mm;
         }
@@ -165,15 +165,15 @@ export default function BarcodeGenerator() {
 
         .brand {
           text-align: center;
-          font-size: 7px;
-          font-weight: bold;
+          font-size: 8px;
+          font-weight: semi-bold;
           text-transform: uppercase;
           white-space: nowrap;
         }
 
         canvas.barcode {
           width: 100%;
-          height: 10mm; /* VISUAL HEIGHT, BUKAN SCALE */
+          height: 9mm; 
           display: block;
         }
 
@@ -185,16 +185,16 @@ export default function BarcodeGenerator() {
 
         /* SKU */
         .bottom span:first-child {
-          font-size: 6px;
-          font-weight: bold;
+          font-size: 8px;
+          font-weight: semi-bold;
           white-space: nowrap;
   
         }
 
         /* HARGA */
         .bottom span:last-child {
-          font-size: 10px;   /* ← UBAH DI SINI KALO MAU LEBIH BESAR */
-          font-weight: 800;
+          font-size: 11px;   
+          font-weight: 600;
           white-space: nowrap;
         }
 
