@@ -204,17 +204,30 @@ export default function BarcodeGenerator() {
             margin: 0;
           }
 
+          html, body {
+            margin: 0;
+            padding: 0;
+            height: auto;
+            overflow: hidden;
+          }
+
           .sidebar {
             display: none;
           }
 
           .preview {
             padding: 0;
+            overflow: visible;
+            height:auto;
           }
 
           .row {
             margin: 0;
-            page-break-after: always;
+            break-after: page;
+          }
+
+          .row:last-child {
+            break-after:auto;
           }
         }
       `}</style>
