@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "JB-Store",
+  title: "JB-Barcode",
   description: "Barcode Generator",
 };
 

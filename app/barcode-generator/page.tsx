@@ -156,7 +156,10 @@ export default function BarcodeGenerator() {
         .label {
           width: 40mm;
           height: 20mm;
-          padding: 1mm;
+          padding-left: 2mm;
+          padding-right: 1mm;
+          padding-bottom: 1.5mm;
+          padding-top: 1.5mm;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -168,7 +171,8 @@ export default function BarcodeGenerator() {
           font-size: 8px;
           font-weight: semi-bold;
           text-transform: uppercase;
-          white-space: nowrap;
+          white-space: break-word;
+          line-height: 1.1;
         }
 
         canvas.barcode {
@@ -180,14 +184,16 @@ export default function BarcodeGenerator() {
         .bottom {
           display: flex;
           justify-content: space-between;
-          align-items: flex-start;
+          align-items: flex-start; ce
         }
 
         /* SKU */
         .bottom span:first-child {
           font-size: 8px;
           font-weight: semi-bold;
-          white-space: nowrap;
+          white-space: normal;
+          max-width: 26mm;
+          line-height: 1.1;
   
         }
 
@@ -196,6 +202,7 @@ export default function BarcodeGenerator() {
           font-size: 11px;   
           font-weight: 600;
           white-space: nowrap;
+          margin-left: 1mm;
         }
 
         @media print {
